@@ -1,0 +1,99 @@
+#scroll-top {
+	position:fixed;
+	bottom:30%;
+	right:5px;
+	text-decoration:none;
+	color:#aaa;
+	display:none;
+	font-size:1.5em
+	}
+
+#scroll-top:hover{
+	cursor:pointer;
+	}
+		
+.up {
+	background: #F18080;
+	border: 1px solid #fff;
+	border-radius: 2px;
+	box-shadow: 0 0 3px rgba(0,0,0,.5);
+	bottom: 40px;
+	-webkit-transform: translate3d(0, 0, 0px);
+	display: block;
+	height: 35px;
+	width: 35px;
+	overflow: hidden;
+	position: fixed;
+	right: 10px;
+	text-indent: -99999em;
+	text-decoration: none;
+	z-index: 100;
+	-webkit-transition: opacity .4s ease-in-out;
+	-moz-transition: opacity .4s ease-in-out;
+	-ms-transition: opacity .4s ease-in-out;
+	-o-transition: opacity .4s ease-in-out;
+	transition: opacity .4s ease-in-out;
+	opacity: 0.5;
+	filter: alpha(opacity=40); /* For IE8 and earlier */
+	}
+		
+.up:hover {
+	opacity: 1.0;
+	filter: alpha(opacity=100); /* For IE8 and earlier */
+	}
+	
+.up:before {
+	color: #fff;
+	content: "\e621";
+	display: block;
+	font-family: 'icons';
+	font-size: 18px;
+	height: 100%;
+	line-height: 37px;
+	text-align: center;
+	text-indent: 0;
+	width: 100%;
+	}
+		
+.up.is-on {
+	opacity: .7;
+	}
+	
+.up.is-off {
+	opacity: 0;
+	}
+
+.up.is-inactive {
+    opacity: .2;
+	}
+
+.up.is-hidden {
+    right: 999px;
+	}
+		
+/*	Font Declarations */
+	
+@font-face {
+    font-family: 'icons';
+    src:url('../font/icons/icons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+		
+[class*="icon-"] {
+    font-family: 'icons';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    speak: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	}
+
+[class*="icon-"]:before {
+    display: block;
+    position: absolute;
+    text-indent: 0;
+	}

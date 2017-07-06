@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Comma Commander</title>
+	
+	<!-- Font Awesome 4.7.0 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css"><!-- Scroll to top CSS -->
+	<link rel="stylesheet" href="css/scroll.css"><!-- Scroll to top CSS -->
+	
+	<!-- Custom JS -->
+	<script src="js/scroll.js"></script><!-- Scroll to top JS -->
+	<script src="js/showme.js"></script><!-- Show and hide JS-->
+	<script src="js/copy.js"></script>	<!-- Copy Text-->
+
+</head>
+
+<body>
+	
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="logo" href="#"><i class="fa fa-creative-commons fa-4" aria-hidden="true"></i>	</a> 
+			<a class="navbar-brand" href="#"> Comma Commander</a>
+		</div>
+	</div>
+</nav> <!-- END NAVBAR -->
+		
+<div class="container">
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#home">Comma to Semi-Colon</a></li>
+		<li><a data-toggle="tab" href="#menu1">Stacked to Semi-Colon</a></li>
+		<li><a data-toggle="tab" href="#menu2">Comma to Stacked List</a></li>
+	<!--	<li><a data-toggle="tab" href="#menu3">Importing Contacts</a></li> -->
+	</ul>
+
+	<div class="tab-content">
+		    <div id="home" class="tab-pane fade in active">
+			  <div class="container">
+			  	<div class="row">
+			  		<div class="col-md-12">
+			  			<h3>Comma to Semi-Colon</h3>      
+			  			<ol>
+			  				<li>Copy and paste a comma separated <strong>Email Address List</strong> into the translator below.</li>
+			  				<li>The <strong>Email Address List</strong> will automatically convert into a semi-colon seperated list.</li>
+			  			</ol>
+			  		</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="well one"> 
+				<form id="form1">
+					<p><code>Copy and paste a comma separated list: </code>
+						<textarea type="text" class="form-control" id="comma_to_semicolon" name="" rows="9"></textarea></p>
+					<p><button type="button" class="loginbtnGrays" name="" value="" id="copyButton1">Copy</button></p>
+					<p><input type="reset" name="wp-submit" id="" class="loginbtnGray" value="Clear" style="width:100%;"></p>
+					
+					<div class="alert alert-danger" id="danger-alert">
+					    <button type="button" class="close" data-dismiss="alert">x</button>
+					    <strong>Warning! </strong>
+					    Please enter some text.
+					</div>
+					<div class="alert alert-success" id="success-alert">
+					    <button type="button" class="close" data-dismiss="alert">x</button>
+					    <strong>Success! </strong>
+					    Saved to clipboard.
+					</div>
+				</form>
+			</div>
+						
+			<div class="well">
+				<div class="">
+					<label>Example: </label>
+				</div>
+		
+<div class="showOff"> 		
+	<p style="border:solid 1px lightgray;padding:5px;border-radius:3px;">stc1010@plymouth.edu;  mcosma@plymouth.edu;  test@test.edu;  ed@gmail.com;  robert@gmail.com;  jason@hotmail.com;  fred@yahoo.com;  jane@rocketmail.com;  luke@comcast.net;  sierra@mountaintop.com;  yougetthepicture@niceviews.com;  clickandclack@talkradio.com;  word@word.com;  nice@nice.com;  test@test.com;  sarah@gmail.com;  frank@hotmail.com;  rob@yahoo.com </p>
+</div>
+
+<p class="showOffs" style="border:solid 1px lightgray;padding:5px;border-radius:3px;">stc1010@plymouth.edu, mcosma@plymouth.edu, test@test.edu, ed@gmail.com, robert@gmail.com, jason@hotmail.com, fred@yahoo.com, jane@rocketmail.com, luke@comcast.net, sierra@mountaintop.com, yougetthepicture@niceviews.com, clickandclack@talkradio.com, word@word.com, nice@nice.com, test@test.com, sarah@gmail.com, frank@hotmail.com, rob@yahoo.com </p>
+	<label class="switch switch-orange">
+		<input type="checkbox" class="switch-input click">
+		<span class="switch-label" data-on="On" data-off="Off"></span>
+		<span class="switch-handle"></span>
+	</label>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		    
+<div id="menu1" class="tab-pane fade">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Stacked to Semi-Colon</h3>       
+				<ol>
+					<li>Copy and paste a stacked <strong>Email Address List</strong> into the translator below.</li>
+					<li>The <strong>Email Address List</strong> will automatically convert into a semi-colon seperated list.</li>
+				</ol>
+			</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="well one"> 
+				<form name="form2">
+					<p><code>Copy and paste a stacked list: </code>
+						<textarea type="text" class="form-control" id="stacked_to_semicolon" name="" rows="9"></textarea>
+					</p>
+					<p><button type="button" class="loginbtnGrays" name="" value="" id="copyButton2">Copy</button></p>
+					<p><input type="reset" name="wp-submit" id="" class="loginbtnGray" value="Clear" style="width:100%;"></p>
+				
+				<div class="alert alert-danger" id="danger-alert-two">
+				    <button type="button" class="close" data-dismiss="alert">x</button>
+				    <strong>Warning! </strong>
+				    Please enter some text.
+				</div>
+				<div class="alert alert-success" id="success-alert-two">
+				    <button type="button" class="close" data-dismiss="alert">x</button>
+				    <strong>Success! </strong>
+				    Saved to clipboard.
+				</div>
+				
+				</form>
+			</div>
+						
+			<div class="well">
+				<div class="">
+					<label>Example: </label>
+				</div>
+		
+<div class="showOfftwo"> 		
+	<p style="border:solid 1px lightgray;padding:5px;border-radius:3px;">stc1010@plymouth.edu;  mcosma@plymouth.edu;  test@test.edu;  ed@gmail.com </p>
+</div>
+
+<p class="showOfftwos" style="border:solid 1px lightgray;padding:5px;border-radius:3px;">
+	stc1010@plymouth.edu <br> 
+	mcosma@plymouth.edu <br> 
+	test@test.edu <br> 
+	ed@gmail.com <br> 
+</p>
+
+<label class="switch switch-orange">
+	<input type="checkbox" class="switch-input clicks">
+	<span class="switch-label" data-on="On" data-off="Off"></span>
+	<span class="switch-handle"></span>
+</label>
+       
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>		  
+</div>
+		    
+<div id="menu2" class="tab-pane fade">
+		      
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Comma to Stacked List</h3>
+				<ol>
+				<li>Copy and paste a comma or semi-colon seperated <strong>Email Address List</strong> into the translator below.</li>
+				<li>The <strong>Email Address List</strong> will automatically convert into a staced list.</li>
+			  	</ol>
+			</div>
+		  
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="well one"> 
+							<form name="form3">
+								<p><code>Copy and paste a comma separated list: </code>
+									<textarea type="text" class="form-control" id="comma_to_stacked" name="" rows="9"></textarea></p>
+								<p><button type="button" class="loginbtnGrays" name="" value="" id="copyButton3">Copy</button></p>
+								<p><input type="reset" name="wp-submit" id="" class="loginbtnGray" value="Clear" style="width:100%;"></p>
+
+							<div class="alert alert-danger" id="danger-alert-three">
+							    <button type="button" class="close" data-dismiss="alert">x</button>
+							    <strong>Warning! </strong>
+							    Please enter some text.
+							</div>
+							<div class="alert alert-success" id="success-alert-three">
+							    <button type="button" class="close" data-dismiss="alert">x</button>
+							    <strong>Success! </strong>
+							    Saved to clipboard.
+							</div>
+						</form>
+					</div> <!-- END well one --> 
+					
+					<div class="well">
+						<div class="">
+							<label>Example: </label>
+						</div>
+		
+					<div class="showOffthree"> 		
+						<p style="border:solid 1px lightgray;padding:5px;border-radius:3px;">
+							stc1010@plymouth.edu <br> 
+							mcosma@plymouth.edu <br> 
+							test@test.edu <br> 
+							ed@gmail.com <br>
+						</p>
+					</div>
+
+					<p class="showOffthrees" style="border:solid 1px lightgray;padding:5px;border-radius:3px;">
+					stc1010@plymouth.edu, mcosma@plymouth.edu, test@test.edu, ed@gmail.com</p>
+	
+						<label class="switch switch-orange">
+							<input type="checkbox" class="switch-input clickss">
+							<span class="switch-label" data-on="On" data-off="Off"></span>
+							<span class="switch-handle"></span>
+						</label>
+	
+					</div>
+				</div>
+				
+	
+<div class="col-md-4">
+	<div class="well one"> 
+		<form name="">
+			<div class="well">
+			<h5 class="text-center">IMPORT A CONTACT LIST INTO O365 </h5>
+		</div>
+			
+			<p>
+				<ol>
+					<li>Download and open the 0365 Contact Template.</li><br>
+					<li>Copy and paste a stacked email address list under the <strong>Email Address List</strong> heading.</li><br>
+					<li>Save the .csv file, then upload the .csv file into your Office 365 Contacts.</li><br>
+				</ol>
+			</p>
+			<p><a href="contacts.csv" class="btn btn-block btn-primary">Download O365 Contact Template</a></p>
+
+						</form>
+					</div> <!-- END well one --> 
+				</div>
+						
+
+					</div> <!-- END col-md-12 --> 
+				</div> <!-- END ROW -->        
+			</div> <!-- END CONTAINER FLUID -->
+		</div>
+	</div>
+
+	
+	</div>
+	</div>
+</div>
+
+<!-- SCROLL TO TOP -->	   
+<div id="scroll-top" title="Back to Top"><span class="up"></span></div>
+
+<!-- Alert JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>	
